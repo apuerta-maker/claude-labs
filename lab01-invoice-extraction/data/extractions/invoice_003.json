@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "invoice_number": "2026-C-0003",
+    "issue_date": "2026-01-12",
+    "issuer": {
+      "name": "Óscar Gimenez-Morata",
+      "tax_id": "23149258B",
+      "address": "Alameda Salvador Leal 4, Castellón, 43954"
+    },
+    "recipient": {
+      "name": "Ruy Segarra Clavero S.C.P",
+      "tax_id": "R0168832D",
+      "address": "Camino de Sabas Paredes 92 Piso 1, Baleares, 11016"
+    },
+    "line_items": [
+      {
+        "description": "Consultoría de procesos (horas)",
+        "quantity": 6.0,
+        "unit_price": 110.85,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Servicio de catering (por persona)",
+        "quantity": 1.0,
+        "unit_price": 28.24,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Licencia de software anual",
+        "quantity": 2.0,
+        "unit_price": 1469.69,
+        "vat_rate": 10.0
+      },
+      {
+        "description": "Soporte técnico mensual",
+        "quantity": 6.0,
+        "unit_price": 409.81,
+        "vat_rate": 10.0
+      }
+    ],
+    "tax_base": 6091.58,
+    "vat_amount": 685.43,
+    "irpf_amount": 913.74,
+    "total": 5863.27
+  },
+  "usage": {
+    "input_tokens": 3661,
+    "output_tokens": 383
+  }
+}

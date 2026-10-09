@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "invoice_number": "2026-C-0008",
+    "issue_date": "2026-03-09",
+    "issuer": {
+      "name": "Nadia del Cortina",
+      "tax_id": "62135605R",
+      "address": "Calle Cruz Barrera 10 Puerta 7, Almería, 34281"
+    },
+    "recipient": {
+      "name": "Farmaceútica EJ S.A.U",
+      "tax_id": "V8506033C",
+      "address": "Avenida Simón Yáñez 44, Ciudad, 18407"
+    },
+    "line_items": [
+      {
+        "description": "Soporte técnico mensual",
+        "quantity": 5.0,
+        "unit_price": 586.99,
+        "vat_rate": 10.0
+      },
+      {
+        "description": "Consultoría de procesos (horas)",
+        "quantity": 2.0,
+        "unit_price": 100.9,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Formación en IA generativa",
+        "quantity": 6.0,
+        "unit_price": 489.24,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Licencia de software anual",
+        "quantity": 1.0,
+        "unit_price": 2393.78,
+        "vat_rate": 10.0
+      }
+    ],
+    "tax_base": 8465.97,
+    "vat_amount": 1191.69,
+    "irpf_amount": 1269.9,
+    "total": 8387.76
+  },
+  "usage": {
+    "input_tokens": 3659,
+    "output_tokens": 377
+  }
+}

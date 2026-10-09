@@ -1,4 +1,4 @@
-"""Modelo de datos para facturas españolas extraídas por Claude"""
+"""Modelo de datos para facturas españolas extraídas por Claude."""
 
 import json
 from datetime import date
@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 
 class Party(BaseModel):
-    """Emisor o destinatario de la factura"""
+    """Emisor o destinatario de la factura."""
 
     name: str = Field(description="Nombre completo o razón social")
     tax_id: str = Field(description="NIF o CIF, por ejemplo B12345678")
@@ -15,7 +15,7 @@ class Party(BaseModel):
 
 
 class LineItem(BaseModel):
-    """Una línea de detalle de la factura"""
+    """Una línea de detalle de la factura."""
 
     description: str = Field(description="Concepto: descripción del producto o servicio")
     quantity: float = Field(description="Número de unidades")
@@ -39,11 +39,17 @@ class Invoice(BaseModel):
     vat_amount: float = Field(description="Cuota total de IVA")
     irpf_amount: float | None = Field(
         default=None,
-        description="Importe de la retención de IRPF si aparece en la factura; si no aparece, null",
+        description=(
+            "Importe de la retención de IRPF como número POSITIVO (por ejemplo 913.74), "
+            "aunque en la factura aparezca con signo negativo. "
+            "Si la factura no tiene retención, null"
+        ),
     )
-    total: float = Field(description="Total a pagar de la factura")
+    total: float = Field(
+        description="Total a pagar: base imponible + cuota de IVA - retención de IRPF"
+    )
 
 
 if __name__ == "__main__":
-    # Imprime el JSON Schema que le pasaremos a Claude como definición de la herramienta
+    # Imprime el JSON Schema que Claude recibe a través de las salidas estructuradas
     print(json.dumps(Invoice.model_json_schema(), indent=2, ensure_ascii=False))

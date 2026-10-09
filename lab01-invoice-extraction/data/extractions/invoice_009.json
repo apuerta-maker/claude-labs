@@ -1,0 +1,56 @@
+{
+  "invoice": {
+    "invoice_number": "2026-A-0009",
+    "issue_date": "2026-05-26",
+    "issuer": {
+      "name": "Castro y Marín S.Coop.",
+      "tax_id": "W3403329J",
+      "address": "Camino de Cornelio Beltrán 538, Huelva, 05508"
+    },
+    "recipient": {
+      "name": "Promociones Inteligentes S.A.",
+      "tax_id": "S2228812J",
+      "address": "Via de Selena Cañizares 21, Cuenca, 19465"
+    },
+    "line_items": [
+      {
+        "description": "Consultoría de procesos (horas)",
+        "quantity": 5.0,
+        "unit_price": 110.5,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Desarrollo de automatización (horas)",
+        "quantity": 3.0,
+        "unit_price": 64.96,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Servicio de catering (por persona)",
+        "quantity": 9.0,
+        "unit_price": 32.96,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Licencia de software anual",
+        "quantity": 1.0,
+        "unit_price": 457.3,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Servicio de catering (por persona)",
+        "quantity": 5.0,
+        "unit_price": 15.99,
+        "vat_rate": 21.0
+      }
+    ],
+    "tax_base": 1581.27,
+    "vat_amount": 332.07,
+    "irpf_amount": null,
+    "total": 1913.34
+  },
+  "usage": {
+    "input_tokens": 3665,
+    "output_tokens": 422
+  }
+}

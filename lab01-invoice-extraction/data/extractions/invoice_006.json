@@ -1,0 +1,44 @@
+{
+  "invoice": {
+    "invoice_number": "2026-A-0006",
+    "issue_date": "2026-05-07",
+    "issuer": {
+      "name": "Manufacturas EL S.A.T.",
+      "tax_id": "G71797484",
+      "address": "Avenida Vicenta Angulo 91, Cuenca, 44842"
+    },
+    "recipient": {
+      "name": "Iker Catalán Suárez S.A.U",
+      "tax_id": "R5685938B",
+      "address": "Via Cleto Rosa 76 Piso 0, Almería, 27386"
+    },
+    "line_items": [
+      {
+        "description": "Desarrollo de automatización (horas)",
+        "quantity": 4.0,
+        "unit_price": 79.8,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 10.0,
+        "unit_price": 28.56,
+        "vat_rate": 21.0
+      },
+      {
+        "description": "Formación en IA generativa",
+        "quantity": 4.0,
+        "unit_price": 1197.86,
+        "vat_rate": 21.0
+      }
+    ],
+    "tax_base": 5396.24,
+    "vat_amount": 1133.21,
+    "irpf_amount": null,
+    "total": 6529.45
+  },
+  "usage": {
+    "input_tokens": 3608,
+    "output_tokens": 337
+  }
+}
