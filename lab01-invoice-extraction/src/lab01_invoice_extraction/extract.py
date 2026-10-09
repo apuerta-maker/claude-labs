@@ -28,8 +28,8 @@ def load_pdf_b64(path: Path) -> str:
     return base64.standard_b64encode(path.read_bytes()).decode("utf-8")
 
 
-def extract_invoice(client: anthropic.Anthropic, pdf_path: Path):
-    """Envía el PDF a Claude y devuelve la factura validada y la respuesta completa."""
+def extract_invoice_bytes(client: anthropic.Anthropic, pdf_bytes: bytes):
+    """Envía los bytes de un PDF a Claude y devuelve la factura validada y la respuesta completa."""
     response = client.messages.parse(
         model=MODEL,
         max_tokens=2000,
@@ -45,7 +45,7 @@ def extract_invoice(client: anthropic.Anthropic, pdf_path: Path):
                         "source": {
                             "type": "base64",
                             "media_type": "application/pdf",
-                            "data": load_pdf_b64(pdf_path),
+                            "data": base64.standard_b64encode(pdf_bytes).decode("utf-8"),
                         },
                     },
                     {"type": "text", "text": "Extrae los datos de esta factura."},
@@ -59,6 +59,11 @@ def extract_invoice(client: anthropic.Anthropic, pdf_path: Path):
         raise RuntimeError(f"Extracción incompleta: stop_reason={response.stop_reason}")
 
     return response.parsed_output, response
+
+
+def extract_invoice(client: anthropic.Anthropic, pdf_path: Path):
+    """Lee el PDF del disco y delega en extract_invoice_bytes."""
+    return extract_invoice_bytes(client, pdf_path.read_bytes())
 
 
 def main() -> None:
