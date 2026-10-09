@@ -227,6 +227,3 @@ cost = (input_tokens × input_price + output_tokens × output_price) / 1,000,000
 
 `Messages API` · `PDF document blocks` · `Structured outputs` · `JSON Schema design` · `Pydantic` · `Evaluation with ground truth` · `Token & cost analysis` · `Reproducible Python environments (uv)` · `Secrets management`
 
----
-
-<sub>Part of <b>claude-labs</b>: hands-on labs building enterprise use cases with Claude, as a Forward Deployed Engineer portfolio. All data is synthetic.</sub>
