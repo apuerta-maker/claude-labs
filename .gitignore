@@ -1,0 +1,12 @@
+# Entornos virtuales
+.venv/
+
+# Secretos
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

@@ -1,0 +1,20 @@
+[project]
+name = "lab01-invoice-extraction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.11.0",
+    "faker>=40.41.0",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+    "reportlab>=5.0.1",
+]
+
+[project.scripts]
+lab01-invoice-extraction = "lab01_invoice_extraction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"

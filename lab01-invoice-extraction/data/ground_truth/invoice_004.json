@@ -1,0 +1,38 @@
+{
+  "invoice_number": "2026-C-0004",
+  "issue_date": "2026-01-19",
+  "issuer": {
+    "name": "Ruy Roca Bartolomé",
+    "tax_id": "23214701L",
+    "address": "Pasadizo de José Alberdi 9 Piso 5, Girona, 29492"
+  },
+  "recipient": {
+    "name": "Talleres Acero S.L.N.E",
+    "tax_id": "B23265960",
+    "address": "Cañada Prudencia Vera 632, Murcia, 52028"
+  },
+  "line_items": [
+    {
+      "description": "Consultoría de procesos (horas)",
+      "quantity": 4.0,
+      "unit_price": 111.99,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Licencia de software anual",
+      "quantity": 6.0,
+      "unit_price": 574.1,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Material de oficina",
+      "quantity": 5.0,
+      "unit_price": 43.6,
+      "vat_rate": 21.0
+    }
+  ],
+  "tax_base": 4110.56,
+  "vat_amount": 863.22,
+  "irpf_amount": 616.58,
+  "total": 4357.2
+}

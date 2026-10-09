@@ -1,0 +1,26 @@
+{
+  "invoice_number": "2026-C-0001",
+  "issue_date": "2026-01-27",
+  "issuer": {
+    "name": "Banca Privada OLMJ S.L.N.E",
+    "tax_id": "E74604422",
+    "address": "Plaza Ciro Gil 18 Puerta 3, Ceuta, 30439"
+  },
+  "recipient": {
+    "name": "Alimentación Cuervo y asociados S.Com.",
+    "tax_id": "B96848916",
+    "address": "Via de Cirino Pinto 6, Pontevedra, 18335"
+  },
+  "line_items": [
+    {
+      "description": "Material de oficina",
+      "quantity": 5.0,
+      "unit_price": 18.47,
+      "vat_rate": 21.0
+    }
+  ],
+  "tax_base": 92.35,
+  "vat_amount": 19.39,
+  "irpf_amount": null,
+  "total": 111.74
+}

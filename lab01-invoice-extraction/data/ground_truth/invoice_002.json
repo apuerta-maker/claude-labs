@@ -1,0 +1,50 @@
+{
+  "invoice_number": "2026-B-0002",
+  "issue_date": "2026-07-15",
+  "issuer": {
+    "name": "Hnos Casanovas S.L.N.E",
+    "tax_id": "E33344391",
+    "address": "Acceso de Crescencia Fernandez 1, Vizcaya, 19965"
+  },
+  "recipient": {
+    "name": "Hotel TX S.L.L.",
+    "tax_id": "D45829272",
+    "address": "Glorieta de Herminia Lasa 3 Puerta 3, Lleida, 25867"
+  },
+  "line_items": [
+    {
+      "description": "Consultoría de procesos (horas)",
+      "quantity": 10.0,
+      "unit_price": 85.32,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Desarrollo de automatización (horas)",
+      "quantity": 4.0,
+      "unit_price": 70.21,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Desarrollo de automatización (horas)",
+      "quantity": 9.0,
+      "unit_price": 66.78,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Formación en IA generativa",
+      "quantity": 1.0,
+      "unit_price": 1007.05,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Licencia de software anual",
+      "quantity": 6.0,
+      "unit_price": 839.1,
+      "vat_rate": 21.0
+    }
+  ],
+  "tax_base": 7776.71,
+  "vat_amount": 1633.11,
+  "irpf_amount": null,
+  "total": 9409.82
+}

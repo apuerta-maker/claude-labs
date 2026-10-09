@@ -1,0 +1,44 @@
+{
+  "invoice_number": "2026-B-0010",
+  "issue_date": "2026-07-02",
+  "issuer": {
+    "name": "Clementina Paca Novoa Frutos",
+    "tax_id": "00894060G",
+    "address": "Calle de Cirino Roda 10 Piso 2, Cáceres, 49577"
+  },
+  "recipient": {
+    "name": "Carmen Roma Agustí S.A.",
+    "tax_id": "N5975221B",
+    "address": "Camino de Carmina Colomer 12, Huesca, 03614"
+  },
+  "line_items": [
+    {
+      "description": "Servicio de catering (por persona)",
+      "quantity": 2.0,
+      "unit_price": 34.45,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Desarrollo de automatización (horas)",
+      "quantity": 3.0,
+      "unit_price": 76.39,
+      "vat_rate": 4.0
+    },
+    {
+      "description": "Desarrollo de automatización (horas)",
+      "quantity": 5.0,
+      "unit_price": 71.11,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Desarrollo de automatización (horas)",
+      "quantity": 9.0,
+      "unit_price": 80.21,
+      "vat_rate": 21.0
+    }
+  ],
+  "tax_base": 1375.51,
+  "vat_amount": 249.9,
+  "irpf_amount": 206.33,
+  "total": 1419.08
+}

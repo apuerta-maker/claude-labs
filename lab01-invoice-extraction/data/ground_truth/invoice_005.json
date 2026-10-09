@@ -1,0 +1,50 @@
+{
+  "invoice_number": "2026-C-0005",
+  "issue_date": "2026-08-15",
+  "issuer": {
+    "name": "Hermanos Torres S.A.",
+    "tax_id": "J9904792J",
+    "address": "Calle Jose Angel Bermúdez 8 Apt. 82, Sevilla, 32148"
+  },
+  "recipient": {
+    "name": "Infraestructuras Álamo S.L.N.E",
+    "tax_id": "W5640541H",
+    "address": "Cañada Sabas Perea 88, Ciudad, 15725"
+  },
+  "line_items": [
+    {
+      "description": "Material de oficina",
+      "quantity": 4.0,
+      "unit_price": 13.99,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Material de oficina",
+      "quantity": 9.0,
+      "unit_price": 17.08,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Servicio de catering (por persona)",
+      "quantity": 1.0,
+      "unit_price": 15.73,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Formación en IA generativa",
+      "quantity": 7.0,
+      "unit_price": 614.19,
+      "vat_rate": 21.0
+    },
+    {
+      "description": "Soporte técnico mensual",
+      "quantity": 6.0,
+      "unit_price": 245.68,
+      "vat_rate": 21.0
+    }
+  ],
+  "tax_base": 5998.82,
+  "vat_amount": 1259.75,
+  "irpf_amount": null,
+  "total": 7258.57
+}
